@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4bdb4e3e-ae16-440b-9cad-10061dc8e01f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/components/kubeflow/dnntrainer/src/trainer/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/kubeflow/dnntrainer/src/trainer/task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/basic/sequential.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/basic/sequential.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/kubeflow-tf/kubeflow-training-classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/kubeflow-tf/kubeflow-training-classification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/notebooks/KubeFlow Pipeline Using TFX OSS Components.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/samples/notebooks/KubeFlow Pipeline Using TFX OSS Components.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/resnet-cmle/resnet-train-pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/samples/resnet-cmle/resnet-train-pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/python/kfp/dsl/_container_op.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/python/kfp/dsl/_container_op.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sdk/python/kfp/dsl/_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/python/kfp/dsl/_pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/collector/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/tools/collector/README.md" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="job.pb.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/api/go_client/job.pb.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-25502">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run.pb.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/api/go_client/run.pb.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3618">
+              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+              <folding>
+                <element signature="e#691#1113#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_job_parameters.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/api/go_http_client/job_client/job_service/create_job_parameters.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+              <folding>
+                <element signature="e#791#1062#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_job_responses.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/api/go_http_client/job_client/job_service/create_job_responses.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1377" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api_job.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/api/go_http_client/job_model/api_job.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-162" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pipeline_client.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/api/go_http_client/pipeline_client/pipeline_client.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+              <folding>
+                <element signature="e#795#1026#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api_pipeline.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/api/go_http_client/pipeline_model/api_pipeline.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+              <folding>
+                <element signature="e#794#952#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api_run.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/api/go_http_client/run_model/api_run.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="229" column="28" lean-forward="true" selection-start-line="229" selection-start-column="28" selection-end-line="229" selection-end-column="28" />
+              <folding>
+                <element signature="e#789#947#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api_status.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/api/go_http_client/run_model/api_status.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+              <folding>
+                <element signature="e#789#913#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generate_api.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/api/generate_api.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="82" column="13" selection-start-line="82" selection-start-column="2" selection-end-line="82" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>$GENERATED_GO_PROTO_FILES</find>
+    </findStrings>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/frontend/mock-backend/package.json" />
+      <path value="$PROJECT_DIR$/frontend/package.json" />
+      <path value="$PROJECT_DIR$/frontend/server/package.json" />
+      <path value="$PROJECT_DIR$/test/frontend-integration-test/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="component_sdk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="component_sdk" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="component_sdk" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="kfp_component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="component_sdk" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataflow" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataflow" type="462c0819:PsiDirectoryNode" />
+              <item name="predict" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataflow" type="462c0819:PsiDirectoryNode" />
+              <item name="predict" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataflow" type="462c0819:PsiDirectoryNode" />
+              <item name="tfdv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataflow" type="462c0819:PsiDirectoryNode" />
+              <item name="tfdv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataflow" type="462c0819:PsiDirectoryNode" />
+              <item name="tfdv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataproc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataproc" type="462c0819:PsiDirectoryNode" />
+              <item name="analyze" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataproc" type="462c0819:PsiDirectoryNode" />
+              <item name="analyze" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataproc" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataproc" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataproc" type="462c0819:PsiDirectoryNode" />
+              <item name="create_cluster" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataproc" type="462c0819:PsiDirectoryNode" />
+              <item name="create_cluster" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataproc" type="462c0819:PsiDirectoryNode" />
+              <item name="train" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="dataproc" type="462c0819:PsiDirectoryNode" />
+              <item name="train" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ibm-components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="kubeflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="experimental" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="samples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="samples" type="462c0819:PsiDirectoryNode" />
+              <item name="tfx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="sdk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="third_party" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kubeflow-pipelines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kubeflow-pipelines" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+              <item name="collector" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20677084" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/backend/api/go_client/job.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25502">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/api/go_http_client/job_model/api_job.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/api/go_http_client/pipeline_client/pipeline_client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <element signature="e#795#1026#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/api/go_http_client/job_client/job_service/create_job_responses.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1377" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/api/go_http_client/job_client/job_service/create_job_parameters.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="e#791#1062#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/api/go_client/run.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3618">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding>
+            <element signature="e#691#1113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/api/go_http_client/pipeline_model/api_pipeline.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding>
+            <element signature="e#794#952#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/api/go_http_client/run_model/api_run.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="229" column="28" lean-forward="true" selection-start-line="229" selection-start-column="28" selection-end-line="229" selection-end-column="28" />
+          <folding>
+            <element signature="e#789#947#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component_sdk/python/kfp_component/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/collector/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/collector/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-81" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHANGELOG.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/collector/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdk/OWNERS">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/api/go_http_client/run_model/api_status.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+          <folding>
+            <element signature="e#789#913#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/api/generate_api.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="82" column="13" selection-start-line="82" selection-start-column="2" selection-end-line="82" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

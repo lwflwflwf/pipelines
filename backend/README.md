@@ -17,7 +17,7 @@ bazel test //backend/...
 After making changes to proto files, the Go client libraries and swagger
 files need to be regenerated and checked-in. The backend/api/generate_api.sh
 script takes care of this.
-
+构建Go客户端库和swagger文件在对原始文件进行更改之后。Go客户端库和swagger文件需要重新生成和签入。后端/api/generate api.sh脚本负责这个工作
 ## Updating BUILD files
 As the backend is written in Go, the BUILD files can be updated automatically
 using [Gazelle](https://github.com/bazelbuild/bazel-gazelle). Whenever a Go

@@ -18,6 +18,7 @@ import kfp.dsl as dsl
 import kfp.gcp as gcp
 import datetime
 
+
 def resnet_preprocess_op(project_id: 'GcpProject', output: 'GcsUri', train_csv: 'GcsUri[text/csv]',
                          validation_csv: 'GcsUri[text/csv]', labels, step_name='preprocess'):
     return dsl.ContainerOp(
@@ -32,6 +33,7 @@ def resnet_preprocess_op(project_id: 'GcpProject', output: 'GcsUri', train_csv: 
         ],
         file_outputs = {'preprocessed': '/output.txt'}
     )
+
 
 def resnet_train_op(data_dir, output: 'GcsUri', region: 'GcpRegion', depth: int, train_batch_size: int,
                     eval_batch_size: int, steps_per_eval: int, train_steps: int, num_train_images: int,

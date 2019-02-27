@@ -60,7 +60,7 @@ def get_pipeline_conf():
   return Pipeline.get_default_pipeline().conf
 
 class Pipeline():
-  """A pipeline contains a list of operators.
+  """A pipeline contains a list of operators. 一个包含节点列表的pp
 
   This class is not supposed to be used by pipeline authors since pipeline authors can use
   pipeline functions (decorated with @pipeline) to reference their pipelines. This class
@@ -94,7 +94,7 @@ class Pipeline():
 
   @staticmethod
   def add_pipeline(name, description, func):
-    """Add a pipeline function (decorated with @pipeline)."""
+    """Add a pipeline function (decorated with @pipeline).增加一个pp函数"""
     Pipeline._pipeline_functions[func] = (name, description)
 
   def __init__(self, name: str):

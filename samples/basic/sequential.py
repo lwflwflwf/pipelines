@@ -18,7 +18,7 @@ import kfp.dsl as dsl
 
 
 @dsl.pipeline(
-  name='Sequential',
+  name='Sequential',  # 连续的
   description='A pipeline with two sequential steps.'
 )
 def sequential_pipeline(url='gs://ml-pipeline-playground/shakespeare1.txt'):

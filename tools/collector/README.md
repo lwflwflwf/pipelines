@@ -13,10 +13,10 @@ export BQ_PROJECT="<PROJECT_HOLDING_THE_BQ_DATASET>"
 export DATASET="spartakus_collector"
 export TABLE="reports"
 
-# Create the dataset for storing spartakus reports
+# Create the dataset for storing spartakus reports --创建用于存储spartakus报告的数据集
 bq --project="${BQ_PROJECT}" mk "${DATASET}"
 
-# Download the schema for the reports table
+# Download the schema for the reports table  ---下载reports表的模式
 curl https://raw.githubusercontent.com/kubernetes-incubator/spartakus/master/pkg/database/bigquery.schema.json -o spartakus.schema.json
 # Create the reports table
 bq --project="${BQ_PROJECT}" mk "${DATASET}.${TABLE}" ./spartakus.schema.json 

@@ -20,25 +20,31 @@ from typing import Dict
 
 
 class ContainerOp(object):
-  """Represents an op implemented by a docker container image."""
+  """
+  Represents an op implemented by a docker container image.
+  表示由docker容器镜像实现的操作。
+  """
 
   def __init__(self, name: str, image: str, command: str=None, arguments: str=None,
                file_outputs : Dict[str, str]=None, is_exit_handler=False):
     """Create a new instance of ContainerOp.
 
     Args:
-      name: the name of the op. It does not have to be unique within a pipeline
-          because the pipeline will generates a unique new name in case of conflicts.
-      image: the container image name, such as 'python:3.5-jessie'
-      command: the command to run in the container.
-          If None, uses default CMD in defined in container.
-      arguments: the arguments of the command. The command can include "%s" and supply
+      name: the name of the op. 操作名
+      It does not have to be unique within a pipeline
+      because the pipeline will generates a unique new name in case of conflicts.
+      它不必在pp中是唯一的因为管道将在发生冲突时生成唯一的新名称。
+      image: the container image name, such as 'python:3.5-jessie' 镜像名
+      command: the command to run in the container. 容器内要运行的命令
+          If None, uses default CMD in defined in container. 为空的话 使用容器内默认的
+      arguments: the arguments of the command. 命令的参数 The command can include "%s" and supply
           a PipelineParam as the string replacement. For example, ('echo %s' % input_param).
           At container run time the argument will be 'echo param_value'.
-      file_outputs: Maps output labels to local file paths. At pipeline run time,
-          the value of a PipelineParam is saved to its corresponding local file. It's
-          one way for outside world to receive outputs of the container.
-      is_exit_handler: Whether it is used as an exit handler.
+      file_outputs: Maps output labels to local file paths. 映射输出标签到本地文件路径
+          At pipeline run time, the value of a PipelineParam is saved to its corresponding local file.
+          It's one way for outside world to receive outputs of the container.
+          在管道运行时，pp参数的值保存到对应的本地文件中。这是外部世界接收容器输出的一种方式。
+      is_exit_handler: Whether it is used as an exit handler.它被用作退出处理程序。
     """
 
     if not _pipeline.Pipeline.get_default_pipeline():
