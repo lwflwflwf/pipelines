@@ -40,11 +40,11 @@ class Compiler(object):
     """
 
     def _pipelineparam_full_name(self, param):
-        """_pipelineparam_full_name converts the names of pipeline parameters
+        """_pipelineparam_full_name converts the names of pipeline parameters参数，特征
           to unique names in the argo yaml
 
         Args:
-          param(PipelineParam): pipeline parameter
+          param(PipelineParam): pipeline parameter  pp参数
           """
         if param.op_name:
             return param.op_name + '-' + param.name
@@ -518,13 +518,31 @@ class Compiler(object):
         argspec = inspect.getfullargspec(pipeline_func)
 
         registered_pipeline_functions = dsl.Pipeline.get_pipeline_functions()
+        # 验证该pp函数 对象是在Pipeline存储中
         if pipeline_func not in registered_pipeline_functions:
             raise ValueError('Please use a function with @dsl.pipeline decorator.')
 
-        pipeline_name, _ = dsl.Pipeline.get_pipeline_functions()[pipeline_func]
-        pipeline_name = K8sHelper.sanitize_k8s_name(pipeline_name)
+        pipeline_name, _ = dsl.Pipeline.get_pipeline_functions()[pipeline_func]  # 返回值形如 (name, description)
+        pipeline_name = K8sHelper.sanitize_k8s_name(pipeline_name)  # 返回的是按照一定的正则规则替换后的名字
 
         # Create the arg list with no default values and call pipeline function.
+        # argspec.args 指定函数的所有参数, 形如对于kubeflow-tf来说
+        '''
+        ['output',
+         'project',
+         'evaluation',
+         'train',
+         'schema',
+         'learning_rate',
+         'hidden_layer_size',
+         'steps',
+         'target',
+         'workers',
+         'pss',
+         'preprocess_mode',
+         'predict_mode'
+         ]
+        '''
         args_list = [dsl.PipelineParam(K8sHelper.sanitize_k8s_name(arg_name))
                      for arg_name in argspec.args]
         with dsl.Pipeline(pipeline_name) as p:
@@ -569,10 +587,12 @@ class Compiler(object):
 
     def compile(self, pipeline_func, package_path):
         """Compile the given pipeline function into workflow yaml.
+        编译给定的pp函数到给定的工作流yaml文件中
 
         Args:
-          pipeline_func: pipeline functions with @dsl.pipeline decorator.
+          pipeline_func: pipeline functions with @dsl.pipeline decorator. 使用装饰器的pp函数
           package_path: the output workflow tar.gz file path. for example, "~/a.tar.gz"
+                        输出工作流的压缩文件路径
         """
         workflow = self._compile(pipeline_func)
         yaml.Dumper.ignore_aliases = lambda *args: True

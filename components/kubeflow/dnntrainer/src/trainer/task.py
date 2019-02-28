@@ -250,9 +250,10 @@ def get_estimator(schema, transformed_data_dir, target_name, output_dir, hidden_
 
 def eval_input_receiver_fn(tf_transform_dir, schema, target):
     """Build everything needed for the tf-model-analysis to run the model.
+    构建tf模型分析模型所需的一切 去运行模型。
     Args:
       tf_transform_dir: directory in which the tf-transform model was written
-        during the preprocessing step.
+        during the preprocessing step. 在预处理过程中tf转换模型要被写入的目录
       schema: the raw data schema.
       target: name of the target column.
     Returns:
@@ -289,7 +290,9 @@ def main():
     schema = json.loads(file_io.read_file_to_string(args.schema))
     feature_columns = None
     if args.preprocessing_module:
+        # .../kubeflow/dnntrainer/src/trainer
         module_dir = os.path.abspath(os.path.dirname(__file__))
+        #
         preprocessing_module_path = os.path.join(module_dir, 'preprocessing.py')
         with open(preprocessing_module_path, 'w+') as preprocessing_file:
             preprocessing_file.write(

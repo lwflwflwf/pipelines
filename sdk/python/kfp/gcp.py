@@ -12,9 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-def use_gcp_secret(secret_name='user-gcp-sa', secret_file_path_in_volume='/user-gcp-sa.json', volume_name='gcp-credentials', secret_volume_mount_path='/secret/gcp-credentials'):
-    """An operator that configures the container to use GCP service account.
 
+def use_gcp_secret(secret_name='user-gcp-sa', secret_file_path_in_volume='/user-gcp-sa.json',
+                   volume_name='gcp-credentials', secret_volume_mount_path='/secret/gcp-credentials'):
+    """
+        An operator that configures the container to use GCP service account.
+        将容器配置为使用 GCP 服务帐户的操作符。
         The user-gcp-sa secret is created as part of the kubeflow deployment that
         stores the access token for kubeflow user service account.
 
@@ -32,37 +35,34 @@ def use_gcp_secret(secret_name='user-gcp-sa', secret_file_path_in_volume='/user-
     def _use_gcp_secret(task):
         from kubernetes import client as k8s_client
         return (
-            task
-                .add_volume(
-                    k8s_client.V1Volume(
-                        name=volume_name,
-                        secret=k8s_client.V1SecretVolumeSource(
-                            secret_name=secret_name,
-                        )
+            task.add_volume(
+                k8s_client.V1Volume(
+                    name=volume_name,
+                    secret=k8s_client.V1SecretVolumeSource(
+                        secret_name=secret_name,
                     )
                 )
-                .add_volume_mount(
-                    k8s_client.V1VolumeMount(
-                        name=volume_name,
-                        mount_path=secret_volume_mount_path,
-                    )
+            ).add_volume_mount(
+                k8s_client.V1VolumeMount(
+                    name=volume_name,
+                    mount_path=secret_volume_mount_path,
                 )
-                .add_env_variable(
-                    k8s_client.V1EnvVar(
-                        name='GOOGLE_APPLICATION_CREDENTIALS',
-                        value=secret_volume_mount_path + secret_file_path_in_volume,
-                    )
+            ).add_env_variable(
+                k8s_client.V1EnvVar(
+                    name='GOOGLE_APPLICATION_CREDENTIALS',
+                    value=secret_volume_mount_path + secret_file_path_in_volume,
                 )
-                .add_env_variable(
-                    k8s_client.V1EnvVar(
-                        name='CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE',
-                        value=secret_volume_mount_path + secret_file_path_in_volume,
-                    )
-                ) # Set GCloud Credentials by using the env var override.
-                  # TODO: Is there a better way for GCloud to pick up the credential?
+            ).add_env_variable(
+                k8s_client.V1EnvVar(
+                    name='CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE',
+                    value=secret_volume_mount_path + secret_file_path_in_volume,
+                )
+            )  # Set GCloud Credentials by using the env var override.
+            # TODO: Is there a better way for GCloud to pick up the credential?
         )
-    
+
     return _use_gcp_secret
+
 
 def use_tpu(tpu_cores: int, tpu_resource: str, tf_version: str):
     """An operator that configures GCP TPU spec in a container op.
